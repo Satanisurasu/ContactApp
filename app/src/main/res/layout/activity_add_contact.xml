@@ -1,0 +1,49 @@
+<!-- layout для activity_add_contact.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/contactNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/contactPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/contactGroupEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Группа"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/contactEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/contactNotesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Примечания"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/saveContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить контакт"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

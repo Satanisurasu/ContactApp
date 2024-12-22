@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Приложение для управления контактами</string>
+    <string name="search_hint">Поиск контактов</string>
+    <string name="contact_name">Имя</string>
+    <string name="contact_phone">Телефон</string>
+    <string name="contact_email">Email</string>
+    <string name="contact_group">Группа</string>
+    <string name="contact_notes">Заметки</string>
+    <string name="save_button">Сохранить</string>
+    <string name="select_photo">Выбрать фото</string>
+    <string name="photo_description">Фото профиля</string>
+</resources>
