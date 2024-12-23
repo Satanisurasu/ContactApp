@@ -29,6 +29,8 @@
         <!-- Добавляем ContactDetailActivity -->
         <activity android:name=".ContactDetailActivity"
             android:exported="true" />
+        <activity android:name=".EditContactActivity"
+            android:exported="true" />
 
     </application>
 

@@ -53,7 +53,7 @@ public class ContactDetailActivity extends AppCompatActivity {
 
             if (contactId == -1) {
                 // Добавляем новый контакт
-                contactViewModel.addContact(new ModelContact(name, phone, email, group, notes));  // Используем новый конструктор
+                contactViewModel.addContact(new ModelContact(name, phone, email, group, notes));  // Добавление контакта без изображения
             } else {
                 // Обновляем существующий контакт
                 contactViewModel.updateContact(new ModelContact(name, phone, email, group, notes));  // Используем новый конструктор

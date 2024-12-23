@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя" />
+
+    <EditText
+        android:id="@+id/editContactPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Телефон" />
+
+    <EditText
+        android:id="@+id/editContactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Электронная почта" />
+
+    <EditText
+        android:id="@+id/editContactGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Группа" />
+
+    <EditText
+        android:id="@+id/editContactNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Примечания" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_gravity="end" />
+</LinearLayout>

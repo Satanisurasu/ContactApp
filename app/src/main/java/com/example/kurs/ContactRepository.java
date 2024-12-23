@@ -34,12 +34,16 @@ public class ContactRepository {
         new DeleteAsyncTask(contactDao).execute(contact);
     }
 
-    public void searchContacts(String name, String phone, String email) {
-        // Реализация поиска по имени, телефону и email
+    public LiveData<List<ModelContact>> searchContacts(String name, String phone, String email) {
+        return contactDao.searchContacts(name, phone, email);
     }
 
     public LiveData<ModelContact> getContactById(int contactId) {
         return contactDao.getContactById(contactId);
+    }
+
+    public LiveData<List<ModelContact>> getContactsSortedByGroup() {
+        return contactDao.getContactsSortedByGroup();
     }
 
     // AsyncTask для вставки

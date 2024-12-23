@@ -1,17 +1,10 @@
 package com.example.kurs;
 
 import android.content.Context;
-import android.database.Cursor;
-
-import androidx.annotation.NonNull;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.room.migration.Migration;
-import androidx.sqlite.db.SupportSQLiteDatabase;
-import androidx.room.Dao;
-import androidx.room.Insert;
-import androidx.room.Query;
+
 
 // Обновляем версию схемы на 3
 @Database(entities = {ModelContact.class}, version = 3, exportSchema = false)

@@ -27,8 +27,9 @@ public interface ContactDao {
     @Query("SELECT * FROM contacts")
     LiveData<List<ModelContact>> getAllContacts();
 
-    // Добавляем запрос для поиска контактов по имени, телефону и email
     @Query("SELECT * FROM contacts WHERE name LIKE :name OR phone LIKE :phone OR email LIKE :email")
     LiveData<List<ModelContact>> searchContacts(String name, String phone, String email);
-}
 
+    @Query("SELECT * FROM contacts ORDER BY `group` ASC")
+    LiveData<List<ModelContact>> getContactsSortedByGroup();
+}

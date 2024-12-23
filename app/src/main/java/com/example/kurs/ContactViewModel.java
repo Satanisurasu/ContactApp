@@ -23,7 +23,7 @@ public class ContactViewModel extends AndroidViewModel {
     }
 
     public void addContact(ModelContact contact) {
-        contactRepository.insert(contact);  // Вставка контакта в репозиторий
+        contactRepository.insert(contact);
     }
 
     public void updateContact(ModelContact contact) {
@@ -34,11 +34,17 @@ public class ContactViewModel extends AndroidViewModel {
         contactRepository.delete(contact);
     }
 
-    public void searchContacts(String name, String phone, String email) {
-        contactRepository.searchContacts(name, phone, email);
+    public LiveData<List<ModelContact>> searchContacts(String name, String phone, String email) {
+        return contactRepository.searchContacts(name, phone, email);
     }
 
     public LiveData<ModelContact> getContactById(int contactId) {
         return contactRepository.getContactById(contactId);
     }
+
+    public LiveData<List<ModelContact>> getContactsSortedByGroup() {
+        return contactRepository.getContactsSortedByGroup();
+    }
+
 }
+

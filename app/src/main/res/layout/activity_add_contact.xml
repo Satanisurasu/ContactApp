@@ -1,10 +1,10 @@
-<!-- layout для activity_add_contact.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Поле для имени контакта -->
     <EditText
         android:id="@+id/contactNameEditText"
         android:layout_width="match_parent"
@@ -12,6 +12,7 @@
         android:hint="Name"
         android:inputType="textPersonName"/>
 
+    <!-- Поле для номера телефона -->
     <EditText
         android:id="@+id/contactPhoneEditText"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:hint="Номер"
         android:inputType="phone"/>
 
+    <!-- Поле для группы контакта -->
     <EditText
         android:id="@+id/contactGroupEditText"
         android:layout_width="match_parent"
@@ -26,6 +28,7 @@
         android:hint="Группа"
         android:inputType="text"/>
 
+    <!-- Поле для почты -->
     <EditText
         android:id="@+id/contactEmailEditText"
         android:layout_width="match_parent"
@@ -33,6 +36,7 @@
         android:hint="Почта"
         android:inputType="textEmailAddress"/>
 
+    <!-- Поле для примечаний -->
     <EditText
         android:id="@+id/contactNotesEditText"
         android:layout_width="match_parent"
@@ -40,10 +44,32 @@
         android:hint="Примечания"
         android:inputType="text"/>
 
+    <!-- ImageView для отображения фотографии контакта -->
+    <ImageView
+        android:id="@+id/contactImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Выбрать изображение"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Кнопка для выбора изображения -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Кнопка для сохранения контакта -->
     <Button
         android:id="@+id/saveContactButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Сохранить контакт"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
